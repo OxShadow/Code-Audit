@@ -20,7 +20,7 @@ poc：
 
 代码分析：
 
-定位c=help ==》helpcontroller.class.php
+定位c=help --》helpcontroller.class.php
 
 方法为help_list
 
