@@ -384,4 +384,4 @@ Storage::load($templateCacheFile,$this->tVar,null,'tpl');
 
 判断$vars=null,为空则包含$_filename，这里的$_filename=$templateCacheFile
 
-所以在这个位置，不写入文件，通过写入恶意代码报错存储日志，然后包含产生了漏洞。(当然ob_start()开启了缓冲区，后续的echo.print,html内容不会直接回显，而是存在缓冲区。所以需要用ob_flush()刷新冲出缓冲区输出到浏览器)
+所以在这个位置，不写入文件，通过写入恶意代码报错存储日志，然后包含产生了漏洞。(当然这里直接输出phpinfo是不行的。ob_start()开启了缓冲区，后续的echo.print,html内容不会直接回显，而是存在缓冲区。所以需要用ob_flush()刷新冲出缓冲区输出到浏览器)
