@@ -177,10 +177,7 @@ function getone($strsql,$db=array()) {
 直接输出数组给到member。
 
 ```
- $userid=$curmember["id"];
-```
 
-也没有过滤
 
 
 
