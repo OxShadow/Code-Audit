@@ -34,7 +34,7 @@ http://127.0.0.1/yunyecms2.0.1/index.php?a=login&c=%3Cimg%20src=1%20onerror=aler
 }
 ```
 
-输入参数为filename和m，报错时会回显到页面，$filename = '', $m = '',跟进 ROUTE_C，ROUTE_M
+$filename = '', $m = '',报错时会回显到页面，$filename = ROUTE_C; $m = ROUTE_M;跟进 ROUTE_C，ROUTE_M
 
 ```
 if(empty($path)){
